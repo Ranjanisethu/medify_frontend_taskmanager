@@ -60,7 +60,7 @@ Beyond the core requirements, this application includes several advanced feature
 Ensure you have a PostgreSQL database running. Update `backend/.env`:
 ```env
 PORT=5000
-DATABASE_URL=postgres://user:password@localhost:5432/task_db
+DATABASE_URL=postgres://user:password@localhost:6543/task_db
 JWT_SECRET=your_secure_secret
 ```
 
@@ -78,4 +78,4 @@ npm install
 npm run dev
 ```
 
-The application will launch at `http://localhost:5173`.
+The application will launch at `http://localhost:6543`.
