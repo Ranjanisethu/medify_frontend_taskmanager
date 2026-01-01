@@ -25,7 +25,8 @@ git push -u origin main
 2.  Go to **Project Settings** -> **Database**.
 3.  Copy the **Connection String** (use the "Nodejs" tab).
     *   It looks like: `postgres://postgres.xxxx:password@aws-0-region.pooler.supabase.com:5432/postgres`
-    *   *Tip: Use the "Transaction Mode" port (6543) if you encounter timeout issues, but port 5432 is standard.*
+    *   **CRITICAL**: You MUST use the **Transaction Mode (Pooler)** connection string (port **6543**) because Render requires an IPv4 address, and the direct connection (5432) is often IPv6-only.
+    *   *To find this: Go to Database -> Click "Connection Level: Transaction Mode" (or look for the port 6543 tab) -> Copy that string.*
     *   **Important**: Save your database password!
 
 ## 4. Backend Deployment (Render)

@@ -158,7 +158,7 @@ const Dashboard = () => {
                                 <div className="text-xs text-blue-600 dark:text-blue-400 uppercase">Active</div>
                             </div>
                         </div>
-                        <div className="w-24 h-24 hidden sm:block">
+                        <div className="w-64 h-64 hidden sm:block">
                             <TaskChart tasks={tasks} />
                         </div>
                     </div>
